@@ -1,7 +1,7 @@
 public class Person {
     private int Id;
     private String name;
-    private String age;
+    private int age;
     private String phoneNumber;
 
     public int getId() {
@@ -10,14 +10,14 @@ public class Person {
     public String getName() {
         return name;
     }
-    public String getAge() {
+    public int getAge() {
         return age;
     }
     public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public Person(int id, String name, String age, String phoneNumber) {
+    public Person(int id, String name, int age, String phoneNumber) {
         Id = id;
         this.name = name;
         this.age = age;

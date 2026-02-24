@@ -1,6 +1,12 @@
+import java.util.List;
+
+
 public class Doctor extends Person {
-    public Doctor(int id, String name, String address, String phoneNumber) {
-        super(id, name, address, phoneNumber);
+    private List<Patient> patients;
+    public Doctor(int id, String name, int age, String phoneNumber) {
+        super(id, name, age, phoneNumber);
     }
-    
+    public List<Patient> getPatients() {
+        return patients;
+    }
 }
